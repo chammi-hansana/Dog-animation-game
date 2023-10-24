@@ -18,7 +18,7 @@
 .controls,
 select,
 option {
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -29,4 +29,19 @@ body {
     background-attachment: fixed; /* Prevent image from scrolling */
     margin: 0;
     padding: 0;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .controls {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        text-align: center;
+    }
+    .controls label {
+        display: block;
+        margin-bottom: 10px;
+    }
 }
